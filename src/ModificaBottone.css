@@ -1,0 +1,72 @@
+.button {
+position: relative;
+width: 150px;
+height: 40px;
+cursor: pointer;
+display: flex;
+align-items: center;
+border: 1px solid #34974d;
+background-color: #3aa856;
+overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.button .button__text {
+-webkit-transform: translateX(35px);
+-ms-transform: translateX(35px);
+transform: translateX(35px);
+color: #fff;
+font-weight: 600;
+}
+
+.button .button__icon {
+position: absolute;
+-webkit-transform: translateX(109px);
+-ms-transform: translateX(109px);
+transform: translateX(109px);
+height: 100%;
+width: 39px;
+background-color: #34974d;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+    justify-content: center;
+}
+
+.button .svg {
+width: 20px;
+stroke: #fff;
+}
+
+.button:hover {
+background: #34974d;
+}
+
+.button:hover .button__text {
+color: transparent;
+}
+
+.button:hover .button__icon {
+width: 148px;
+-webkit-transform: translateX(0);
+-ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.button:active .button__icon {
+background-color: #2e8644;
+}
+
+.button:active {
+border: 1px solid #2e8644;
+}

@@ -1,0 +1,74 @@
+.buttonRed  {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #cc0000;
+    background-color: #e50000;
+    overflow: hidden;
+}
+
+.buttonRed , .button__icon, .button__text {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.buttonRed  .button__text {
+    -webkit-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+            transform: translateX(35px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.buttonRed  .button__icon {
+    position: absolute;
+    -webkit-transform: translateX(109px);
+        -ms-transform: translateX(109px);
+            transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #cc0000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.buttonRed  .svg {
+    width: 20px;
+}
+
+.buttonRed:hover {
+    background: #cc0000;
+}
+
+.buttonRed:hover .button__text {
+    color: transparent;
+}
+
+.buttonRed:hover .button__icon {
+    width: 148px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.buttonRed:active .button__icon {
+    background-color: #b20000;
+}
+
+.buttonRed:active {
+    border: 1px solid #b20000;
+}
