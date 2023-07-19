@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 const booksAPI = 'https://striveschool-api.herokuapp.com/api/comments/'
-const autoAPI = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNkNDRkMzZhMTllZjAwMTRkNmU0NTEiLCJpYXQiOjE2ODU4MTE2NzQsImV4cCI6MTY4NzAyMTI3NH0.eOAnn6Pi35UOWYrjeaz-SgOWxtWh5b2PKGdxxlLGJ80"
+const autoAPI = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM2ZjI1ODMzYjE1MjAwMTQ3NjE3OWIiLCJpYXQiOjE2ODcyNjU0NjMsImV4cCI6MTY4ODQ3NTA2M30.CGk44f84KTI-ByU4Ma5Bb14qgj74Dv887zIzabyL_XQ"
 
 export default function CommentArea({ elementId }) {
     const [comments, setComments] = useState([]);
@@ -64,6 +64,7 @@ export default function CommentArea({ elementId }) {
                     }
                     return comment;
                 });
+                console.log(updatedComments);
                 setComments(updatedComments);
                 setSelectedComment(null);
                 setReview("");

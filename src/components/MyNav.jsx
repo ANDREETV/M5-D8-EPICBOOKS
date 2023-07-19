@@ -19,8 +19,6 @@ function SearchInput(props) {
         setSearchText(inputValue);
         props.handleQueryChange(inputValue)
     }
-
-
     return(
         <Row className="d-flex justify-content-center gap-1 mb-5">
         <label className="w-50 d-flex "> <b>Cerca dei libri:</b></label>
@@ -28,10 +26,7 @@ function SearchInput(props) {
         </Row>
     )
 }
-
-
 export default function MyNav(props) {
-
     function handleQueryChange(value) {
         props.handleQueryChange(value)
     }
@@ -46,7 +41,7 @@ export default function MyNav(props) {
                         <Link className='nav-link' to="/">Home</Link>
                         <Link className='nav-link'  to="/about">About</Link>
                         <Link className='nav-link'  to="/browse">Browse</Link>
-                        <NavDropdown title="Categoria Films" id="basic-nav-dropdown">
+                        <NavDropdown title="Categoria Libri" id="basic-nav-dropdown">
                             <Link className='dropdown-item' to="/fantasy">Fantasy</Link>
                             <NavDropdown.Divider />
                             <Link className='dropdown-item' to="/history">History </Link>
